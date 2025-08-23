@@ -12,7 +12,21 @@ def cont10_0():
     print('FIM!')
 
 
-def contador():
+def contador(inicio,fim,passo):
+    if passo == 0:
+        passo = 1   
+    if inicio > fim:
+        if passo > 0:
+            passo = - passo
+        else:
+            passo = passo     
+    print(f'Contagem de {inicio} até {fim} de {abs(passo)} em {abs(passo)}')
+    for contador in range(inicio,fim-1,passo):
+        print(contador, end=' ')
+    print('FIM!')
+
+
+
 
 
 cont1_10()
